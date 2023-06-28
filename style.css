@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(28, 16, 70);
+    color: white;
+}
+.lists .list-items{
+   display: flex;
+   flex-direction: row;
+   justify-content: right;
+   align-items: center;
+   gap: 20px;
+   list-style: none;
+}
+.lista .list-items li{
+    
+    font-size: 20px;
+}
+img[alt="menu"]{
+    display: none;
+}
+
+img[alt="hand"]{
+    height: 25px;
+    width: 30px;
+}
+img[alt="hand"], h4{
+    display: inline;
+    padding: 0 3px;
+}
+#dev{
+    color: rgb(176, 190, 43);
+    padding: 7px 0;
+}
+.pc img{
+    height: 20%;
+    width: 30vw;
+    position: relative;
+    left: 30vh;
+    bottom: 20vh;
+}
+.header {
+ margin-top: 20px;
+ margin-left: 45vh;
+}
+.main h4{
+  margin-left: 50vw;
+    font-size: 30px;
+    border: 8px solid blue;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-radius: 4px;
+  
+    
+}
+.projects{
+     margin-top: 70px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 0 30px;
+
+}
+.projects p{
+    font-size: 25px;
+}
+.project-list img{
+    height: 60%;
+    width: 80%;
+
+}
+.project-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap:4px;
+   
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 8%;
+}
+.footer .socials img{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   height: 30px;
+   width: 30px;
+   margin: 0 10px;
+}
+
+
+@media (max-width: 576px){
+    .lists .list-items li{
+        display: none;
+    }
+    img[alt="menu"]{
+        display: block;
+        height: 20px;
+        width: 20px;
+    }
+    .pc img{
+        
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+    }
+    img[alt="pc"]{
+        width:60vw;
+    }
+    .intro h2{
+        font-size: 40px;
+    }
+    .intro h4{
+        font-size: 25px;
+        text-align: center;
+    }
+    .project-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    img[alt="project-image"]{
+        width: 55vw;
+    }
+    .main h4{
+        font-size: 35px;
+    }
+}
